@@ -20,10 +20,10 @@ int main()
      int qstate;
 
      conexion = mysql_init(0);
-     conexion = mysql_real_connect(conexion,"joseluisesteban.ddns.net","root","aslhey2177","registro_usuarios",0,NULL,0);
+     conexion = mysql_real_connect(conexion,"HOST","root","PASS","TUDATABASE",0,NULL,0);
 
      if(conexion){
-        cout<<"conexión correcta!!! "<<endl;
+        cout<<"conexiÃ³n correcta!!! "<<endl;
      }else{
         cout<<"connection problem: "<<mysql_error(conexion)<<endl;
      }
